@@ -1,1 +1,1 @@
-alert 'coffee is working'
+console.log 'coffee is working'

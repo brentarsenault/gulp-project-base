@@ -5,6 +5,8 @@ var sass		= require('gulp-sass');
 var coffee		= require('gulp-coffee');
 var connect 	= require('gulp-connect');
 
+var open		= require('gulp-open');
+
 
 gulp.task('connect', function() {
 	connect.server({
@@ -37,4 +39,19 @@ gulp.task('watch', function() {
 	gulp.watch(['./app/js/*.coffee'], ['coffee']);
 });
 
-gulp.task('default', ['connect','html','sass','coffee','watch']);
+
+//open tasks?
+gulp.task("open", function(){
+  var options = {
+    url: "http://localhost:8080",
+    app: "firefox"
+  };
+  gulp.src("./build/index.html")
+  .pipe(open("", options));
+});
+
+gulp.task('default', function() {
+	gulp.run('connect','html','sass','coffee','watch','open');
+
+	// gulp.run('open');
+});
