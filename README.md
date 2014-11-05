@@ -1,4 +1,15 @@
-gulp-test-setup
-===============
+# Gulp Project Base
+> Basic GulpJS setup leveraging Sass and coffeescript.
 
-Testing out gulp setup
+### Clone Repository
+```shell
+git clone git@github.com:brentarsenault/gulp-project-base.git
+```
+
+### Simple Installation
+```shell
+npm install
+```
+
+
+

@@ -1,12 +1,8 @@
-$blue: #cc0000;
-$black: #33cc00;
-
-html,
-body {
-	background: $blue;
-}
-
-h1 {
-	font-size: 22px;
-	color: $black;
-}
+/**
+ * The main fonts for the website
+ *
+ *
+ */
+@import "scaffolding/_fonts";
+@import "scaffolding/_mixins";
+@import "scaffolding/_colors";

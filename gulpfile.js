@@ -40,18 +40,15 @@ gulp.task('watch', function() {
 });
 
 
-//open tasks?
+//open tasks
 gulp.task("open", function(){
   var options = {
     url: "http://localhost:8080",
-    app: "firefox"
+    app: "google-chrome"
   };
   gulp.src("./build/index.html")
   .pipe(open("", options));
 });
 
-gulp.task('default', function() {
-	gulp.run('connect','html','sass','coffee','watch','open');
-
-	// gulp.run('open');
-});
+//run the application
+gulp.task('default', ['connect','html','sass','coffee','watch','open']);
