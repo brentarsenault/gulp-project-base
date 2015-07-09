@@ -8,6 +8,7 @@ git clone git@github.com:brentarsenault/gulp-project-base.git
 
 ### Simple Installation
 ```shell
+npm install gulp
 npm install
 ```
 
